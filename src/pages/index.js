@@ -21,7 +21,8 @@ const Landing = styled.section`
 
 const Header = styled.header`
   background-color: ${bgColor};
-  height: 33%;
+  min-height: 140px;
+  max-height: 33vh;
   position: relative;
 `;
 
@@ -36,6 +37,7 @@ const Image = styled.img`
 
 const Content = styled.div`
   margin-top: 100px;
+  background-color: ${lightColor};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +84,7 @@ const IndexPage = () => (
           title="Loremoji Ipsum"
           image={loremojiImage}
           content="An emoji-enhanced placeholder text generator"
-          link="https://loremoji.surge.sh"
+          link="https://loremoji.app.pavey.dev"
         />
       </TileWrapper>
     </Content>
